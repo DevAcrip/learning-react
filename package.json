@@ -1,0 +1,12 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "In this repository I will be uploading my practices on react, projects, games, technical tests and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

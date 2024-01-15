@@ -9,7 +9,7 @@ export function TwitterFollowCard({userName, name, isFollowing}) {
         />
         <div className="tw-followCard-info">
           <strong>{name}</strong>
-          <span className="tw-followCard-infoUsername">@Devacrip</span>
+          <span className="tw-followCard-infoUsername">@{userName}</span>
         </div>
       </header>
 

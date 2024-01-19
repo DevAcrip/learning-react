@@ -24,6 +24,8 @@ function App() {
     setBoard(newBoard)
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
     setTurn(newTurn)
+    window.localStorage.setItem('board', JSON.stringify(newBoard))
+    window.localStorage.setItem('turn', turn)
     const newWinner = checkWinnerFrom(newBoard)
     if (newWinner){
       confetti()
@@ -32,7 +34,7 @@ function App() {
       setWinner(false)
     }
   }
-  
+
   return (
     <main className='board'>
       <h1>Tic tac toe</h1>

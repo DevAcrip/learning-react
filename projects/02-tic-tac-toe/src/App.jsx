@@ -3,6 +3,7 @@ import { Square } from './components/Square'
 import { TURNS } from './constants'
 import { checkWinnerFrom, checkEndGame } from './logic/board'
 import { WinnerModal } from './components/WinnerModal'
+import { saveGameToStorage } from './logic/storage'
 import confetti from 'canvas-confetti'
 import './App.css'
 
@@ -34,8 +35,8 @@ function App() {
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
     setTurn(newTurn)
 
+    saveGameToStorage
 
-    
     const newWinner = checkWinnerFrom(newBoard)
     if (newWinner){
       confetti()

@@ -36,7 +36,7 @@ function App() {
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
     setTurn(newTurn);
 
-    saveGameToStorage({ board: newBoard, turn });
+    saveGameToStorage({ board: newBoard, turn: newTurn });
 
     const newWinner = checkWinnerFrom(newBoard);
     if (newWinner) {

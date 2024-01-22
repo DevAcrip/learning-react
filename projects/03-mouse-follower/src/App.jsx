@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <h1>Proyecto 3</h1>
-      <button>Activar seguir puntero</button>
+      <button onClick={() => setEnabled(!enabled)}>{enabled ? "Desactivar" : "Activar"} seguir puntero</button>
     </>
   );
 }

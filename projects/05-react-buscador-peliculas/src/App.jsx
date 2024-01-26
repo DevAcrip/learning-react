@@ -2,9 +2,11 @@ import "./App.css"
 export function App() {
 
   return (
-    <h1>
-      Prueba técnica
-    </h1>
+    <div>
+      <form className="form">
+        <input type="text" />
+      </form>
+    </div>
   )
 }
 
